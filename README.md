@@ -12,7 +12,7 @@ Jogo de corrida em faixas feito com Jetpack Compose. É a nova versão do Racing
 
 ## Arquitetura
 
-O app segue organização por feature. A feature `game` contém `models`, `repositories`, `view_models`, `views` e `routes`. O NavHost do aplicativo fica em `src/routes`, e o tema Compose em `design/`.
+O app segue organização por feature. A feature `game` contém `models`, `repositories`, `view_models`, `views` e `routes`. O NavHost do aplicativo fica em `src/routes`, e o tema Compose em `src/design/`.
 
 ## Funcionalidades
 

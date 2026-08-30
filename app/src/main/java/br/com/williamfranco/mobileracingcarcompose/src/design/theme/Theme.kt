@@ -1,4 +1,4 @@
-package br.com.williamfranco.mobileracingcarcompose.design.theme
+package br.com.williamfranco.mobileracingcarcompose.src.design.theme
 
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme

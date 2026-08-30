@@ -1,4 +1,4 @@
-package br.com.williamfranco.mobileracingcarcompose.design.theme
+package br.com.williamfranco.mobileracingcarcompose.src.design.theme
 
 import androidx.compose.ui.graphics.Color
 

@@ -8,7 +8,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
-import br.com.williamfranco.mobileracingcarcompose.design.theme.MobileRacingCarComposeTheme
+import br.com.williamfranco.mobileracingcarcompose.src.design.theme.MobileRacingCarComposeTheme
 import br.com.williamfranco.mobileracingcarcompose.src.features.game.view_models.GameViewModel
 import br.com.williamfranco.mobileracingcarcompose.src.features.game.view_models.GameViewModelImpl
 import br.com.williamfranco.mobileracingcarcompose.src.routes.RoutesApp
