@@ -5,6 +5,7 @@ Jogo de corrida em faixas feito com Jetpack Compose. É a nova versão do Racing
 ## Stack
 
 - Kotlin e Jetpack Compose (Material 3)
+- NDK 30.0.16248370
 - Navigation Compose
 - DataStore (highscore)
 - Koin (IoC)
