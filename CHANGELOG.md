@@ -2,6 +2,13 @@
 
 All notable changes to this project are documented in this file.
 
+## 2026-11-01
+
+- Commit: Updated Gradle to 9.6.0, AGP to 9.5.0, libraries and CI actions.
+  - Refreshed dependency versions and related build configuration to keep the project current.
+  - Updated coreKtx 1.19.0, junitVersion 1.3.0, espressoCore 3.7.0, activityCompose 1.13.0, lifecycle 2.11.0 and koin 4.2.2.
+  - Updated CI to actions/checkout v7 and actions/setup-java v6.
+
 ## 2026-08-30
 
 - Commit: Updated the project architecture.
