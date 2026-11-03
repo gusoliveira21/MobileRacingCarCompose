@@ -15,11 +15,11 @@ import br.com.williamfranco.mobileracingcarcompose.src.features.game.models.CarP
 import br.com.williamfranco.mobileracingcarcompose.src.features.game.models.CarPosition.Right
 import br.com.williamfranco.mobileracingcarcompose.src.features.game.models.RotationDirection
 import br.com.williamfranco.mobileracingcarcompose.src.features.game.models.SwipeDirection
-import br.com.williamfranco.mobileracingcarcompose.src.services.Constants.ACCELERATION_X_Y_OFFSET_TRIGGER
-import br.com.williamfranco.mobileracingcarcompose.src.services.Constants.CAR_POSITION_PERCENTAGE_FROM_BOTTOM
-import br.com.williamfranco.mobileracingcarcompose.src.services.Constants.CAR_SIZE
-import br.com.williamfranco.mobileracingcarcompose.src.services.Constants.LANE_COUNT
-import br.com.williamfranco.mobileracingcarcompose.src.services.Constants.STREET_SIDE_PERCENTAGE_EACH
+import br.com.williamfranco.mobileracingcarcompose.src.common.constants.Constants.ACCELERATION_X_Y_OFFSET_TRIGGER
+import br.com.williamfranco.mobileracingcarcompose.src.common.constants.Constants.CAR_POSITION_PERCENTAGE_FROM_BOTTOM
+import br.com.williamfranco.mobileracingcarcompose.src.common.constants.Constants.CAR_SIZE
+import br.com.williamfranco.mobileracingcarcompose.src.common.constants.Constants.LANE_COUNT
+import br.com.williamfranco.mobileracingcarcompose.src.common.constants.Constants.STREET_SIDE_PERCENTAGE_EACH
 
 data class CarState(
     private val image: ImageBitmap,

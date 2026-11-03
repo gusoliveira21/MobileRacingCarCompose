@@ -10,7 +10,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.composed
 import androidx.compose.ui.input.pointer.pointerInput
 import br.com.williamfranco.mobileracingcarcompose.src.features.game.models.SwipeDirection
-import br.com.williamfranco.mobileracingcarcompose.src.services.Constants
+import br.com.williamfranco.mobileracingcarcompose.src.common.constants.Constants
 import kotlin.math.abs
 
 fun Modifier.detectSwipeDirection(maxWidth: Int, onSwipeDirection: (SwipeDirection) -> Unit) =

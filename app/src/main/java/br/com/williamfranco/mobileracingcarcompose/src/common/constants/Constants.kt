@@ -1,4 +1,4 @@
-package br.com.williamfranco.mobileracingcarcompose.src.services
+package br.com.williamfranco.mobileracingcarcompose.src.common.constants
 
 object Constants {
     const val LANE_COUNT = 3

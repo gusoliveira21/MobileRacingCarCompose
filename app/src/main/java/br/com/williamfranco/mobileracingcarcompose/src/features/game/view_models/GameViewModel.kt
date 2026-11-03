@@ -9,10 +9,10 @@ import br.com.williamfranco.mobileracingcarcompose.src.features.game.models.Move
 import br.com.williamfranco.mobileracingcarcompose.src.features.game.models.NightRacingResourcePack
 import br.com.williamfranco.mobileracingcarcompose.src.features.game.models.RacingResourcePack
 import br.com.williamfranco.mobileracingcarcompose.src.features.game.repositories.HighscoreRepository
-import br.com.williamfranco.mobileracingcarcompose.src.services.Constants.COLLISION_SCORE_PENALTY
-import br.com.williamfranco.mobileracingcarcompose.src.services.Constants.DEFAULT_ACCELEROMETER_SENSITIVITY
-import br.com.williamfranco.mobileracingcarcompose.src.services.Constants.INITIAL_GAME_SCORE
-import br.com.williamfranco.mobileracingcarcompose.src.services.SoundService
+import br.com.williamfranco.mobileracingcarcompose.src.common.constants.Constants.COLLISION_SCORE_PENALTY
+import br.com.williamfranco.mobileracingcarcompose.src.common.constants.Constants.DEFAULT_ACCELEROMETER_SENSITIVITY
+import br.com.williamfranco.mobileracingcarcompose.src.common.constants.Constants.INITIAL_GAME_SCORE
+import br.com.williamfranco.mobileracingcarcompose.src.common.services.SoundService
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted

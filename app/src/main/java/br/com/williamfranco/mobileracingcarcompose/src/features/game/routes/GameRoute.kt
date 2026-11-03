@@ -10,7 +10,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import br.com.williamfranco.mobileracingcarcompose.src.features.game.view_models.GameViewModel
 import br.com.williamfranco.mobileracingcarcompose.src.features.game.views.GameView
-import br.com.williamfranco.mobileracingcarcompose.src.services.vibrateError
+import br.com.williamfranco.mobileracingcarcompose.src.common.services.vibrateError
 import org.koin.compose.viewmodel.koinViewModel
 
 @Composable

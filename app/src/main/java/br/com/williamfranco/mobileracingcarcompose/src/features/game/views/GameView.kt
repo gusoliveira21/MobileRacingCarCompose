@@ -34,9 +34,9 @@ import br.com.williamfranco.mobileracingcarcompose.src.features.game.views.state
 import br.com.williamfranco.mobileracingcarcompose.src.features.game.views.state.BlockersState
 import br.com.williamfranco.mobileracingcarcompose.src.features.game.views.state.CarState
 import br.com.williamfranco.mobileracingcarcompose.src.features.game.views.state.GameState
-import br.com.williamfranco.mobileracingcarcompose.src.services.Constants
-import br.com.williamfranco.mobileracingcarcompose.src.services.Constants.CAR_MOVEMENT_SPRING_ANIMATION_STIFFNESS
-import br.com.williamfranco.mobileracingcarcompose.src.services.Constants.TICKER_ANIMATION_DURATION
+import br.com.williamfranco.mobileracingcarcompose.src.common.constants.Constants
+import br.com.williamfranco.mobileracingcarcompose.src.common.constants.Constants.CAR_MOVEMENT_SPRING_ANIMATION_STIFFNESS
+import br.com.williamfranco.mobileracingcarcompose.src.common.constants.Constants.TICKER_ANIMATION_DURATION
 
 @Composable
 fun GameView(

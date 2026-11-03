@@ -1,4 +1,4 @@
-package br.com.williamfranco.mobileracingcarcompose.src.services
+package br.com.williamfranco.mobileracingcarcompose.src.common.services
 
 import br.com.williamfranco.mobileracingcarcompose.R
 

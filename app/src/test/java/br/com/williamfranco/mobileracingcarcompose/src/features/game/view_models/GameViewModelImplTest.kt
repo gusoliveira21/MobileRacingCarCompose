@@ -4,8 +4,8 @@ import androidx.compose.ui.geometry.Rect
 import br.com.williamfranco.mobileracingcarcompose.src.features.game.fakes.FakeHighscoreRepository
 import br.com.williamfranco.mobileracingcarcompose.src.features.game.fakes.FakeSoundService
 import br.com.williamfranco.mobileracingcarcompose.src.features.game.models.MovementInput
-import br.com.williamfranco.mobileracingcarcompose.src.services.Constants.COLLISION_SCORE_PENALTY
-import br.com.williamfranco.mobileracingcarcompose.src.services.Constants.INITIAL_GAME_SCORE
+import br.com.williamfranco.mobileracingcarcompose.src.common.constants.Constants.COLLISION_SCORE_PENALTY
+import br.com.williamfranco.mobileracingcarcompose.src.common.constants.Constants.INITIAL_GAME_SCORE
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.first

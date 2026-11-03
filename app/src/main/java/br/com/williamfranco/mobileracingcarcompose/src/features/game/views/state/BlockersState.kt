@@ -3,7 +3,7 @@ package br.com.williamfranco.mobileracingcarcompose.src.features.game.views.stat
 import androidx.compose.ui.geometry.Rect
 import androidx.compose.ui.graphics.ImageBitmap
 import androidx.compose.ui.graphics.drawscope.DrawScope
-import br.com.williamfranco.mobileracingcarcompose.src.services.Constants
+import br.com.williamfranco.mobileracingcarcompose.src.common.constants.Constants
 import kotlin.random.Random
 
 class BlockersState(image: ImageBitmap) {

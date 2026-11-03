@@ -2,6 +2,13 @@
 
 All notable changes to this project are documented in this file.
 
+## 2026-11-02
+
+- Commit: Updated project architecture under src/common.
+  - Moved dependency injection, navigation, design theme and shared UI or services into `src/common/` (`dependency_injectors`, `routes`, `design`, and related folders).
+  - Kept feature code under `features/` and local persistence under `data/` where the app uses it.
+  - Updated packages, imports, AndroidManifest where needed, and README architecture documentation.
+
 ## 2026-11-01
 
 - Commit: Updated Gradle to 9.6.0, AGP to 9.5.0, libraries and CI actions.

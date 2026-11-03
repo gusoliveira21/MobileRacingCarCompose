@@ -1,4 +1,4 @@
-package br.com.williamfranco.mobileracingcarcompose.src.routes
+package br.com.williamfranco.mobileracingcarcompose.src.common.routes
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost

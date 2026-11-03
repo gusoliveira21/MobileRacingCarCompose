@@ -7,11 +7,11 @@ import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.IntSize
 import androidx.compose.ui.unit.toOffset
 import androidx.compose.ui.unit.toSize
-import br.com.williamfranco.mobileracingcarcompose.src.services.Constants.BLOCKER_HEIGHT
-import br.com.williamfranco.mobileracingcarcompose.src.services.Constants.BLOCKER_INTERSPACE_PERCENTAGE
-import br.com.williamfranco.mobileracingcarcompose.src.services.Constants.BLOCKER_WIDTH
-import br.com.williamfranco.mobileracingcarcompose.src.services.Constants.LANE_COUNT
-import br.com.williamfranco.mobileracingcarcompose.src.services.Constants.STREET_SIDE_PERCENTAGE_EACH
+import br.com.williamfranco.mobileracingcarcompose.src.common.constants.Constants.BLOCKER_HEIGHT
+import br.com.williamfranco.mobileracingcarcompose.src.common.constants.Constants.BLOCKER_INTERSPACE_PERCENTAGE
+import br.com.williamfranco.mobileracingcarcompose.src.common.constants.Constants.BLOCKER_WIDTH
+import br.com.williamfranco.mobileracingcarcompose.src.common.constants.Constants.LANE_COUNT
+import br.com.williamfranco.mobileracingcarcompose.src.common.constants.Constants.STREET_SIDE_PERCENTAGE_EACH
 import kotlin.random.Random
 
 data class BlockState(val image: ImageBitmap, var lanePosition: Int) {

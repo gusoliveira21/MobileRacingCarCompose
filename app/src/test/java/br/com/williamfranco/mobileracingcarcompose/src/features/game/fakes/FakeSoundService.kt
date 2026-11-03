@@ -1,6 +1,6 @@
 package br.com.williamfranco.mobileracingcarcompose.src.features.game.fakes
 
-import br.com.williamfranco.mobileracingcarcompose.src.services.SoundService
+import br.com.williamfranco.mobileracingcarcompose.src.common.services.SoundService
 
 class FakeSoundService : SoundService {
     val loadedSounds = mutableListOf<Pair<Int, Int>>()

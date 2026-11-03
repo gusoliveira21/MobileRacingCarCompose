@@ -1,7 +1,7 @@
 package br.com.williamfranco.mobileracingcarcompose
 
 import android.app.Application
-import br.com.williamfranco.mobileracingcarcompose.src.di.appModule
+import br.com.williamfranco.mobileracingcarcompose.src.common.dependency_injectors.appModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
