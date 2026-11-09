@@ -18,34 +18,42 @@ class GameStateTest {
     }
 
     @Test
-    fun run_setsRunning() {
-        val gameState = GameState()
-
-        gameState.run()
+    fun run_returnsRunningState() {
+        val gameState = GameState().run()
 
         assertTrue(gameState.isRunning())
         assertEquals("RUNNING", gameState.getStatusName())
     }
 
     @Test
-    fun pause_setsPaused() {
-        val gameState = GameState()
-        gameState.run()
-
-        gameState.pause()
+    fun pause_returnsPausedState() {
+        val gameState = GameState().run().pause()
 
         assertTrue(gameState.isPaused())
         assertEquals("PAUSED", gameState.getStatusName())
     }
 
     @Test
-    fun stop_setsStopped() {
-        val gameState = GameState()
-        gameState.run()
+    fun resumeAfterPause_returnsRunningState() {
+        val gameState = GameState().run().pause().run()
 
-        gameState.stop()
+        assertTrue(gameState.isRunning())
+    }
+
+    @Test
+    fun stop_returnsStoppedState() {
+        val gameState = GameState().run().stop()
 
         assertTrue(gameState.isStopped())
         assertEquals("STOPPED", gameState.getStatusName())
+    }
+
+    @Test
+    fun transitions_doNotMutateOriginalState() {
+        val original = GameState()
+
+        original.run()
+
+        assertTrue(original.isStopped())
     }
 }

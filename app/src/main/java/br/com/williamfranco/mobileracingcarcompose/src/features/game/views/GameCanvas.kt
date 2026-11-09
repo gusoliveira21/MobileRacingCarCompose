@@ -1,10 +1,17 @@
 package br.com.williamfranco.mobileracingcarcompose.src.features.game.views
 
+import androidx.compose.animation.core.LinearEasing
+import androidx.compose.animation.core.animateFloat
+import androidx.compose.animation.core.infiniteRepeatable
+import androidx.compose.animation.core.rememberInfiniteTransition
+import androidx.compose.animation.core.tween
 import androidx.compose.foundation.Canvas
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.geometry.Rect
 import androidx.compose.ui.graphics.drawscope.DrawScope
+import br.com.williamfranco.mobileracingcarcompose.src.common.constants.Constants.TICKER_ANIMATION_DURATION
 import br.com.williamfranco.mobileracingcarcompose.src.features.game.views.state.BackgroundState
 import br.com.williamfranco.mobileracingcarcompose.src.features.game.views.state.BlockersState
 import br.com.williamfranco.mobileracingcarcompose.src.features.game.views.state.CarState
@@ -22,7 +29,21 @@ fun GameCanvas(
     onCarRectDraw: (Rect) -> Unit,
     modifier: Modifier = Modifier,
 ) {
+    val infiniteTransition = rememberInfiniteTransition(label = "infinite")
+    val ticker by infiniteTransition.animateFloat(
+        initialValue = 0f,
+        targetValue = 1f,
+        animationSpec = infiniteRepeatable(
+            animation = tween(durationMillis = TICKER_ANIMATION_DURATION, easing = LinearEasing)
+        ),
+        label = "ticker"
+    )
+
     Canvas(modifier = modifier) {
+        // Lê o ticker na fase de draw: a cada frame o Canvas é redesenhado
+        // e o movimento do cenário/bloqueadores avança sem depender de toque.
+        ticker
+
         drawBackground(
             gameState = gameState,
             backgroundState = backgroundState,
@@ -49,7 +70,7 @@ private fun DrawScope.drawBackground(
     backgroundState: BackgroundState,
     backgroundSpeed: Int
 ) {
-    if (!gameState.isPaused())
+    if (gameState.isRunning())
         backgroundState.move(velocity = backgroundSpeed)
     backgroundState.draw(drawScope = this)
 }

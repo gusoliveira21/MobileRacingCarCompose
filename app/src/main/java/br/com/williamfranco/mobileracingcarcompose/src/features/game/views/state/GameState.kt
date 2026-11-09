@@ -1,6 +1,6 @@
 package br.com.williamfranco.mobileracingcarcompose.src.features.game.views.state
 
-data class GameState(private var status: Status = Status.STOPPED) {
+data class GameState(val status: Status = Status.STOPPED) {
     enum class Status {
         RUNNING,
         PAUSED,
@@ -11,17 +11,11 @@ data class GameState(private var status: Status = Status.STOPPED) {
     fun isPaused() = status == Status.PAUSED
     fun isStopped() = status == Status.STOPPED
 
-    fun run() {
-        status = Status.RUNNING
-    }
+    fun run() = copy(status = Status.RUNNING)
 
-    fun pause() {
-        status = Status.PAUSED
-    }
+    fun pause() = copy(status = Status.PAUSED)
 
-    fun stop() {
-        status = Status.STOPPED
-    }
+    fun stop() = copy(status = Status.STOPPED)
 
     fun getStatusName(): String {
         return status.name

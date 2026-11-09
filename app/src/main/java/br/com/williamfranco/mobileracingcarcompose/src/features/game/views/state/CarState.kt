@@ -131,4 +131,9 @@ data class CarState(
     }
 
     fun getPosition() = position
+
+    fun reset() {
+        position = Middle
+        rotationDirection = null
+    }
 }
